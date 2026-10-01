@@ -2,6 +2,24 @@
   "name": "astro-better-code-blocks",
   "version": "0.1.4",
   "description": "Remark/rehype plugins and a copy-code web component for enhanced code blocks in Astro",
+  "keywords": [
+    "astro",
+    "rehype",
+    "remark",
+    "prism",
+    "code",
+    "syntax-highlighting"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/better-static-sites/better-static-sites.github.io.git",
+    "directory": "astro-better-code-blocks/astro-better-code-blocks"
+  },
+  "homepage": "https://better-static-sites.github.io",
+  "bugs": {
+    "url": "https://github.com/better-static-sites/better-static-sites.github.io/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -9,13 +27,10 @@
     "./CopyCodeButton.astro": "./CopyCodeButton.astro"
   },
   "files": [
-    "*.mjs",
     "*.js",
     "*.astro",
     "*.css"
   ],
-  "keywords": ["astro", "rehype", "remark", "prism", "code", "syntax-highlighting"],
-  "license": "MIT",
   "dependencies": {
     "hast-util-from-html": "^2.0.0",
     "hast-util-to-text": "^4.0.0",

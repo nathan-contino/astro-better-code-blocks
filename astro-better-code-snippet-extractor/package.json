@@ -2,6 +2,22 @@
   "name": "astro-better-code-snippet-extractor",
   "version": "0.2.1",
   "description": "Astro component and integration for loading Bluehawk-annotated code snippets and local source files",
+  "keywords": [
+    "astro",
+    "bluehawk",
+    "code",
+    "snippets"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/better-static-sites/better-static-sites.github.io.git",
+    "directory": "astro-better-code-blocks/astro-better-code-snippet-extractor"
+  },
+  "homepage": "https://better-static-sites.github.io",
+  "bugs": {
+    "url": "https://github.com/better-static-sites/better-static-sites.github.io/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./index.js",
@@ -12,8 +28,6 @@
     "*.js",
     "*.astro"
   ],
-  "keywords": ["astro", "bluehawk", "code", "snippets"],
-  "license": "MIT",
   "peerDependencies": {
     "@astrojs/prism": ">=3.0.0"
   }
