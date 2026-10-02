@@ -1,6 +1,6 @@
 {
   "name": "astro-better-code-blocks",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Remark/rehype plugins and a copy-code web component for enhanced code blocks in Astro",
   "keywords": [
     "astro",
