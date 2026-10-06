@@ -1,0 +1,39 @@
+<h1>Code block fixtures</h1>
+<p>Plain JavaScript:</p>
+<pre class="language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">hi </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Highlight, collapse, and a title:</p>
+<figure class="code-figure"><pre class="language-typescript" data-language="ts" data-has-line-meta="true"><code class="language-typescript"><span class="line line-highlighted"><span class="token keyword">import</span> <span class="token punctuation">{</span> a <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./a'</span><span class="token punctuation">;</span></span><span class="line"><span class="token keyword">const</span> b<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></span><span class="line line-highlighted"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span><span class="line line-highlighted">  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span></span><span class="line"><span class="token punctuation">}</span></span><span class="line line-collapse-toggle" data-count="2">2 hidden lines</span><span class="line line-collapsed"><span class="token comment">// hidden</span></span><span class="line line-collapsed"><span class="token comment">// also hidden</span></span><span class="line"><span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></code></pre><figcaption class="code-title">app.ts</figcaption></figure>
+<p>Diff overlay:</p>
+<pre class="language-json" data-language="json" data-has-line-meta="true"><code class="language-json"><span class="line"><span class="token punctuation">{</span></span><span class="line diff-deleted">-  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span></span><span class="line diff-inserted">+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.1.0"</span><span class="token punctuation">,</span></span><span class="line">   <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"pkg"</span></span><span class="line"><span class="token punctuation">}</span></span></code></pre>
+<p>Escaped component tags:</p>
+<pre class="language-jsx" data-language="mdx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">Tabs</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span><span class="token class-name">TabItem</span></span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>One<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">content</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span><span class="token class-name">TabItem</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;/</span><span class="token class-name">Tabs</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<p>Shell session with continuations and quotes:</p>
+<pre class="language-shell-session" data-language="shell-session"><code class="language-shell-session"><span class="token output">> npm install
+</span><span class="token command"><span class="token shell-symbol important" data-no-copy="">$</span> <span class="token bash language-bash">already prompted</span></span>
+<span class="token command"><span class="token shell-symbol important" data-no-copy="">#</span> <span class="token bash language-bash">root prompt</span></span>
+<span class="token output">> curl -X POST \
+  -H 'Content-Type: application/json' \
+  https://example.com
+> echo 'a multi
+line quote'
+> echo done
+
+> after blank
+</span></code></pre>
+<p>Aliased language:</p>
+<pre class="language-bash" data-language="sh" data-has-line-meta="true"><code class="language-bash"><span class="line"><span class="token builtin class-name">echo</span> one</span><span class="line line-highlighted"><span class="token builtin class-name">echo</span> two</span></code></pre>
+<p>No language:</p>
+<pre class="language-plaintext" data-language="plaintext"><code class="language-plaintext">just text &#x3C;b>not bold&#x3C;/b>
+</code></pre>
+<p>Excluded language:</p>
+<pre><code class="language-mermaid">graph LR
+  A --> B
+</code></pre>
+<p>Inline <code>code</code> stays inline.</p>

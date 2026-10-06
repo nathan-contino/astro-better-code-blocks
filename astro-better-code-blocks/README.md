@@ -1,6 +1,6 @@
 # astro-better-code-blocks
 
-Remark/rehype plugins and a copy-code web component for enhanced code blocks in Astro.
+Remark/rehype plugins, matching [Sätteri](https://satteri.bruits.org/) plugins (`astro-better-code-blocks/satteri`), and a copy-code web component for enhanced code blocks in Astro.
 
 ## Install
 

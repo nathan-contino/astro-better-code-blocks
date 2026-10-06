@@ -53,9 +53,31 @@ import CopyCodeButton from 'astro-better-code-blocks/CopyCodeButton.astro';
 
 `<CopyCodeButton />` injects an SVG sprite and the web component registration script. Because Astro deduplicates `<script>` tags, it's safe to import in multiple layouts.
 
+## Sätteri
+
+The `astro-better-code-blocks/satteri` entry point exports [Sätteri](https://satteri.bruits.org/) plugins that render the same HTML as the unified ones:
+
+```ts
+import mdx from '@astrojs/mdx';
+import { satteri } from '@astrojs/markdown-satteri';
+import { codeBlocks, shellSession } from 'astro-better-code-blocks/satteri';
+
+const processor = satteri({
+  mdastPlugins: [shellSession()],
+  hastPlugins: [codeBlocks()],
+});
+
+export default defineConfig({
+  markdown: { syntaxHighlight: false, processor },
+  integrations: [mdx({ syntaxHighlight: false, processor })],
+});
+```
+
+`shellSession` and `codeBlocks` take the same options as `remarkShellSession` and `rehypeCodeBlocks`.
+
 ## Configuration
 
-Both plugins accept an options object.
+Both plugins accept an options object. The Sätteri plugins take the same options.
 
 ### rehypeCodeBlocks
 
