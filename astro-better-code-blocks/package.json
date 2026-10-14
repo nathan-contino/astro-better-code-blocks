@@ -15,7 +15,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/better-static-sites/better-static-sites.github.io.git",
-    "directory": "astro-better-code-blocks/astro-better-code-blocks"
+    "directory": "lib/code-blocks/astro-better-code-blocks"
   },
   "homepage": "https://better-static-sites.github.io",
   "bugs": {
@@ -30,10 +30,12 @@
   },
   "files": [
     "*.js",
-    "*.mjs",
     "*.astro",
     "*.css"
   ],
+  "scripts": {
+    "test": "node --test test/"
+  },
   "dependencies": {
     "hast-util-from-html": "^2.0.0",
     "hast-util-to-text": "^4.0.0",
@@ -44,9 +46,6 @@
     "@astrojs/prism": ">=3.0.0",
     "prismjs": ">=1.29.0",
     "satteri": ">=0.10.0 <0.11.0"
-  },
-  "scripts": {
-    "test": "node --test test/"
   },
   "peerDependenciesMeta": {
     "satteri": {
